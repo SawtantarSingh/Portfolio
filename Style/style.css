@@ -1,0 +1,226 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/*----------------------------Hero CSS -----------------------------------------*/
+.background{
+    background-image: url('../images/hero-bg.png');
+}
+.background-intro{
+    background-color: #15151a;
+}
+.grid-container{
+    display: grid;
+    height: 100vh;
+     grid-template-columns: 500px;
+     grid-template-rows: 300px ;
+     justify-content: center;
+     align-content: center;
+     text-align: center;
+}
+.hero-text{
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    font-size: 35.3px;
+    text-transform: uppercase;
+    
+}
+.hero-subtext{
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    font-size: 20.3px;
+    text-transform: uppercase;
+    
+}
+
+/*----------------------------Introduction CSS -----------------------------------------*/
+.grid-intro-container{
+    display: grid;
+    grid-template-columns: 700px;
+    grid-template-rows: 310px max-content;
+    justify-content: center;
+    padding: 50px;
+    
+}
+.grid-intro1{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.grid-intro1 > img{
+    height: 250px; 
+    width: 300px;
+    border-radius: 100%;
+    
+}
+.intro-text{
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20.3px;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+/*----------------------------Education And Skill CSS -----------------------------------------*/
+.grid-skill-container{
+    display: grid;
+    padding: 50px;
+    grid-template-columns: auto;
+    grid-template-rows: auto max-content max-content ;    
+}
+.grid-skill{
+    display: inline-flex;
+    justify-content:space-around;
+}
+.text-heading{
+    color: #ffffff;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-size: 61px;
+    text-align: center;
+    
+   
+}
+.text-subheading{
+    color: #ffffff;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+ .list{
+    color: #ffffff;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 18px;
+ }
+
+@media (max-width:700px){
+    .grid-intro-container{
+        grid-template-columns: auto;
+    }
+}
+
+/*----------------------------Project CSS -----------------------------------------*/
+.grid-project-container{
+   display: grid;
+   grid-template-columns: auto auto auto auto ;
+   grid-template-rows: auto auto ;
+   padding: 50px;
+   margin-top: 0;
+}
+.text-proj-heading{
+    color: #ffffff;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-size: 61px;
+    text-align: center;
+    grid-column: span 4;
+}
+.proj-item1{
+    padding: 20px;
+}
+.proj-item2{
+    grid-column: span 3;
+    padding: 20px;
+}
+.proj-item1  img{
+    height: 300px;
+    width: 400px;
+    border: solid 10px white;
+    padding: 20px;
+}
+.proj-item2 p{
+    color: #ffffff;
+    font-weight: 100;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    font-size: 18px;
+    text-align: left;
+}
+.proj-item2 h1{
+    color: #ffffff;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+.proj-item2 button{
+    border: 2px white solid;
+    border-radius: 20px;
+    background-color: #15151a;
+    color:#ffffff;
+    padding: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+}
+.proj-item2 button:hover{
+    background-color: #ffffff;
+    color: #15151a;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+}
+@media (max-width:1110px){
+    .proj-item2 p{
+        padding: 13px;
+    }
+    .proj-item1  img{
+        height: 300px;
+        width: 250px;
+       
+    }
+}
+@media (max-width:989px){
+    .proj-item2{
+        grid-column: span 4;
+    }
+    .proj-item2 button{
+       margin-left: 10px;
+    }
+}
+/*----------------------------Footer CSS -----------------------------------------*/
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+.flex-item1{
+    width: 100%;
+}
+.flex-container img{
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+}
+
+@media (max-width:500px) {
+    body{
+        width: 142%;
+    }
+    .text-proj-heading{
+        color: #ffffff;
+        font-weight: 700;
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        font-size: 40px;
+        text-align: center;
+        grid-column: span 4;
+    }
+}
