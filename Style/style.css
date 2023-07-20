@@ -5,7 +5,7 @@ body{
 
 /*----------------------------Hero CSS -----------------------------------------*/
 .background{
-    background-image: url('../Images/hero-bg.png');
+    background-image: url('./Images/hero-bg.png');
 }
 .background-intro{
     background-color: #15151a;
